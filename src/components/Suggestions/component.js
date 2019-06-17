@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import Constants from 'expo-constants';
 import { inject, observer } from 'mobx-react/native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Col, Row, Grid } from 'react-native-easy-grid';
@@ -7,7 +8,6 @@ import { Col, Row, Grid } from 'react-native-easy-grid';
 import FloatingNav from '../FloatingNav/component';
 import { Button } from 'react-native-paper';
 import { suggestionTypes, suggestions } from './utils';
-import Constants from 'expo-constants';
 import StatusBarEffect from '../StatusBarEffect/component';
 
 // Organized in pairs (left and right column).

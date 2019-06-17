@@ -42,6 +42,7 @@ exports[`renders as expected (root) 1`] = `
     currRouteName="mockRoute"
     navigateToRoute={[Function]}
   />
+  <Version />
 </Fragment>
 `;
 

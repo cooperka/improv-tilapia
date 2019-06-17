@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import Constants from 'expo-constants';
 import {
   withNavigation,
   DrawerItems as DefaultDrawerItems,
 } from 'react-navigation';
-import { List, TouchableRipple } from 'react-native-paper';
+import { List, TouchableRipple, Divider } from 'react-native-paper';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { inject, observer } from 'mobx-react/native';
 
@@ -171,6 +172,19 @@ export class ReferenceItems extends Component {
   }
 }
 
+function Version() {
+  const versionString = `${Constants.appOwnership}-${Constants.manifest.version}`;
+
+  return (
+    <React.Fragment>
+      <Divider style={styles.divider} />
+      <ListItem
+        containerStyle={styles.titleOnly}
+        title={`Version ${versionString}`}
+      />
+    </React.Fragment>
+  );
+}
 class DrawerItems extends Component {
   render() {
     const { navigation } = this.props;
@@ -189,6 +203,7 @@ class DrawerItems extends Component {
         <TimerItems {...sectionProps} />
         <SuggestionsItems {...sectionProps} />
         <ReferenceItems {...sectionProps} />
+        <Version />
       </React.Fragment>
     );
   }
@@ -216,6 +231,9 @@ const styles = StyleSheet.create({
   itemTitle: {
     color: color.MATERIAL_PRIMARY,
     fontSize: 16,
+  },
+  divider: {
+    marginVertical: 8,
   },
   titleOnly: {
     paddingVertical: 8,

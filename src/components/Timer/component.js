@@ -1,9 +1,9 @@
 import { Duration } from 'luxon';
 import React, { Component } from 'react';
 import { StyleSheet, View, Animated } from 'react-native';
+import Constants from 'expo-constants';
 import * as Brightness from 'expo-brightness';
 import { useKeepAwake } from 'expo-keep-awake';
-import Constants from 'expo-constants';
 import { Button, FAB } from 'react-native-paper';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { observer, inject } from 'mobx-react/native';
