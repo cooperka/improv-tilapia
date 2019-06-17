@@ -32,6 +32,18 @@
       "appStoreUrl": "https://itunes.apple.com/us/app/improv-tilapia/id1456501532",
       "icon": "./assets/icon-ios.png",
       "supportsTablet": true
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "cooperka",
+            "project": "improv-tilapia",
+            "authToken": "XXX"
+          }
+        }
+      ]
     }
   }
 }

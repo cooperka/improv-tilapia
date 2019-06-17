@@ -26,3 +26,6 @@ firebase-debug.log*
 **/.idea/libraries/
 **/.idea/tasks.xml
 **/.idea/workspace.xml*
+
+# Secret keys
+app.json
