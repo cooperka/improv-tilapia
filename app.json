@@ -4,10 +4,12 @@
     "name": "Improv Tilapia",
     "slug": "improv-tilapia",
     "privacy": "public",
-    "sdkVersion": "33.0.0",
-    "platforms": ["ios", "android"],
     "version": "1.4.0",
+    "sdkVersion": "33.0.0",
+    "description": "Simple tools to help your team practice smarter.",
+    "githubUrl": "https://github.com/cooperka/ImprovTilapia",
     "icon": "./assets/icon-android.png",
+    "platforms": ["ios", "android"],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -27,11 +29,9 @@
     "ios": {
       "buildNumber": "8",
       "bundleIdentifier": "com.cooperka.improv",
-      "appStoreUrl": "https://apps.apple.com/us/app/improv-tilapia/id1456501532",
+      "appStoreUrl": "https://itunes.apple.com/us/app/improv-tilapia/id1456501532",
       "icon": "./assets/icon-ios.png",
       "supportsTablet": true
-    },
-    "description": "Simple tools to help your team practice smarter.",
-    "githubUrl": "https://github.com/cooperka/ImprovTilapia"
+    }
   }
 }
